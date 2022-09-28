@@ -15,6 +15,9 @@ const Navbar = () => {
       <MenuButtons name='Product'/>
       <WhyCoSchedule  name='Why CoSchedule'/>
       <Resources name='Resources' />
+      <Button variant='link' _hover={{ color: '#d4765d' }}>
+        <Link textDecoration='none' as={ReactLink} to='/pricing'>Sign In</Link>
+        </Button>
       </HStack>
       <Spacer/>
       <HStack spacing='24px'>
