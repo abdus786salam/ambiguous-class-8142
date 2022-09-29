@@ -16,7 +16,7 @@ const Navbar = () => {
       <WhyCoSchedule  name='Why CoSchedule'/>
       <Resources name='Resources' />
       <Button variant='link' _hover={{ color: '#d4765d' }}>
-        <Link textDecoration='none' as={ReactLink} to='/pricing'>Sign In</Link>
+        <Link textDecoration='none' as={ReactLink} to='/pricing'>Pricing</Link>
         </Button>
       </HStack>
       <Spacer/>
