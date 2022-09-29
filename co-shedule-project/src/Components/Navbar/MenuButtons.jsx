@@ -6,11 +6,11 @@ const MenuButtons = ({ name }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <div>
-      <Menu isOpen={isOpen} onClose={onClose}>
+      <Menu  isOpen={isOpen} onClose={onClose}>
         <MenuButton as={Button}  onMouseOver={onOpen} variant='link' _hover={{ color: '#d4765d' }} >
           {name}
         </MenuButton>
-        <MenuList boxShadow='dark-lg' onMouseLeave={onClose}>
+        <MenuList  boxShadow='dark-lg' onMouseLeave={onClose}>
           <Flex >
             <VStack p={4}>
               <MenuItem>
