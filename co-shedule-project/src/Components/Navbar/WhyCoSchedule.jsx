@@ -31,8 +31,6 @@ const WhyCoSchedule = ({ name }) => {
                             </MenuItem>
                         </VStack>
                     </Flex>
-
-
                 </MenuList>
             </Menu>
         </div>
