@@ -2,12 +2,13 @@ import React from 'react'
 import { Box, Container, Heading, Text, Link, Button, Image, SimpleGrid, List, ListItem, ListIcon, Center, Divider } from '@chakra-ui/react'
 import { CheckIcon } from '@chakra-ui/icons'
 import { Link as ReactLink } from 'react-router-dom'
+import Footer from './Footer'
 const HomePage = () => {
   return (
     <Container maxW='100%'>
       <Box maxW='70%' m='auto' mt={20} >
-        <Heading as='h1'>Organize All Of Your Marketing In One Place. From Any Place.</Heading>
-        <Text fontSize='md'>Get more done in less time with the only work management software for marketers.</Text>
+        <Heading as='h1' fontSize="5xl">Organize All Of Your Marketing In One Place. From Any Place.</Heading>
+        <Text fontSize='lg'>Get more done in less time with the only work management software for marketers.</Text>
         <Button colorScheme='red' mt={10}>
           <Link as={ReactLink} to='/login' display='flex' gap={2}>Get Started Free</Link>
         </Button>
@@ -45,7 +46,7 @@ const HomePage = () => {
 
         </SimpleGrid>
       </Box>
-      <Box p={20} mt={10}>
+      <Box p={20} m={10}>
         <Heading>
           Our Porducts
         </Heading>
@@ -54,23 +55,23 @@ const HomePage = () => {
             <Box>
               <Image w='100%' h='120px' src='https://coschedule.com/_next/image?url=%2Fimg%2Fhome%2Fmc-product-background.png&w=1920&q=100' alt='' />
             </Box>
-            <Box m='-30px 20px 20px'>
+            <Box m='-70px 20px 20px' textAlign='left' p={10}>
               <Image h='60px' boxShadow='dark-lg' w='60px' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-HqEoGA6PY3dWvni8a0Oll3Eef0dQkwvH5ufNOtHo3g&s' alt='' />
-              <Heading mt={5} as='h3'>Marketing Calendar</Heading>
+              <Heading mt={10} as='h3' fontSize='2xl'>Marketing Calendar</Heading>
               <Text fontSize='sm'>
                 A calendar that helps you see, schedule, and share your marketing.
               </Text>
-              <List mt={5} spacing={2}>
+              <List mt={5} spacing={2} fontSize='md'>
                 <ListItem>
-                  <ListIcon as={CheckIcon} color='green.500' />
+                  <ListIcon as={CheckIcon} color='orange.500' />
                   See everything together in one place
                 </ListItem>
                 <ListItem>
-                  <ListIcon as={CheckIcon} color='green.500' />
+                  <ListIcon as={CheckIcon} color='orange.500' />
                   Share your progress with higher-ups
                 </ListItem>
                 <ListItem>
-                  <ListIcon as={CheckIcon} color='green.500' />
+                  <ListIcon as={CheckIcon} color='orange.500' />
                   Show what your marketing is doing
                 </ListItem>
               </List>
@@ -83,23 +84,23 @@ const HomePage = () => {
             <Box>
               <Image w='100%' h='120px' src='https://coschedule.com/_next/image?url=%2Fimg%2Fhome%2Fsuite-product-background.png&w=1920&q=100' alt='' />
             </Box>
-            <Box m='-30px 20px 20px'>
+            <Box  m='-70px 20px 20px' textAlign='left' p={10}>
               <Image h='60px' boxShadow='dark-lg' w='60px' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhkmWGsib0scgc9BFQ97Ivm2kueGxP39YI00TyF0Xgdg&s' alt='' />
-              <Heading mt={5} as='h3'>Marketing Suite</Heading>
+              <Heading mt={10} as='h3' fontSize='2xl'>Marketing Suite</Heading>
               <Text fontSize='sm'>
                 A family of agile marketing products to coordinate your team, projects, and process.
               </Text>
-              <List mt={5} spacing={2}>
+              <List mt={5} spacing={2} fontSize='md' >
                 <ListItem>
-                  <ListIcon as={CheckIcon} color='green.500' />
+                  <ListIcon as={CheckIcon} color='orange.500' />
                   Manage marketing requests
                 </ListItem>
                 <ListItem>
-                  <ListIcon as={CheckIcon} color='green.500' />
+                  <ListIcon as={CheckIcon} color='orange.500' />
                   Eliminate content bottlenecks
                 </ListItem>
                 <ListItem>
-                  <ListIcon as={CheckIcon} color='green.500' />
+                  <ListIcon as={CheckIcon} color='orange.500' />
                   Maximize resources to increase output
                 </ListItem>
               </List>
@@ -112,13 +113,13 @@ const HomePage = () => {
             <Box>
               <Image w='100%' h='120px' src='https://coschedule.com/_next/image?url=%2Fimg%2Fhome%2Fhs-product-background.png&w=1920&q=100' alt='' />
             </Box>
-            <Box m='-30px 20px 20px'>
+            <Box  m='-70px 20px 20px' textAlign='left' p={10}>
               <Image h='60px' boxShadow='dark-lg' w='60px' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdFf4vYwRJ8HfLpbQzQ6k4sYBBDOfbPMWr-r7Qf6Aj3A&s' alt='' />
-              <Heading mt={5} as='h3'>Headline Studio</Heading>
+              <Heading mt={10} as='h3' fontSize='2xl'>Headline Studio</Heading>
               <Text fontSize='sm'>
                 Write better headlines that will boost your traffic.
               </Text>
-              <List mt={5} spacing={2}>
+              <List mt={5} spacing={2} fontSize='md'>
                 <ListItem>
                   <ListIcon as={CheckIcon} color='blue.500' />
                   Score your headlines based on proven data
@@ -139,15 +140,15 @@ const HomePage = () => {
           </Box>
           <Box borderRadius={5} boxShadow='dark-lg' minW={340} >
             <Box>
-              <Image w='100%' h='120px' src='https://coschedule.com/_next/image?url=%2Fimg%2Fhome%2Fmc-product-background.png&w=1920&q=100' alt='' />
+              <Image w='100%' h='120px' src='https://coschedule.com/_next/image?url=%2Fimg%2Fhome%2Fami-product-background.png&w=1920&q=100' alt='' />
             </Box>
-            <Box m='-30px 20px 20px'>
+            <Box m='-70px 20px 20px' textAlign='left' p={10}>
               <Image h='60px' boxShadow='dark-lg' w='60px' src='https://coschedule.com/img/academy/ami-logo-color.svg' alt='' />
-              <Heading mt={5} as='h3'>Actionable Marketing Institute</Heading>
+              <Heading mt={10} as='h3' fontSize='2xl'>Actionable Marketing Institute</Heading>
               <Text fontSize='sm'>
                 Develop new marketing skills in 30 minutes (or less).
               </Text>
-              <List mt={5} spacing={2}>
+              <List mt={5} spacing={2} fontSize='md'>
                 <ListItem>
                   <ListIcon as={CheckIcon} color='purple' />
                   Improve your marketing with fluff-free training
@@ -169,16 +170,16 @@ const HomePage = () => {
         </SimpleGrid>
       </Box>
       <Box mt={20}>
-        <Heading as='h2'>
+        <Heading as='h2' fontSize='4xl'>
           <Center>
             The fastest growing marketing work management software
           </Center>
         </Heading>
-        <Text fontSize='sm'>CoSchedule is trusted by 30,000 marketers in 100+ countries.</Text>
+        <Text fontSize='lg'>CoSchedule is trusted by 30,000 marketers in 100+ countries.</Text>
         <SimpleGrid  p={20} templateColumns={{ base: '1fr', md: '1fr 1fr 1fr' }} gap={4}>
           <Box _hover={{ boxShadow: 'dark-lg' }} p={10}>
             <Link as={ReactLink} to='/'>
-              <Heading as='h2'>Gartner</Heading>
+              <Heading as='h2' fontSize='6xl' >Gartner</Heading>
               <Heading fontSize='lg' as='h4'>Magic Quadrant</Heading>
               <Center>
               <Divider borderWidth='2px' w={20} m={4} />
@@ -212,10 +213,11 @@ const HomePage = () => {
       </Box>
       <Box bg='red.300' p='70px 20px'  color='white'>
         <Heading as='h2'>Organize all of your marketing in one place</Heading>
-        <Button as={Button} colorScheme='white' color={'red.300'} variant='solid'>
+        <Button mt={10} as={Button} colorScheme='white' color={'red.300'} variant='solid'>
         <Link as={ReactLink} to='/product-demo'>Get Started Free</Link>
         </Button>
       </Box>
+      <Footer />
     </Container>
   )
 }
