@@ -1,10 +1,10 @@
 import React from 'react'
-import { Box, Container, Heading, Text, Link, Button, Image, SimpleGrid, List, ListItem, ListIcon } from '@chakra-ui/react'
-import { FaAccessibleIcon, FaCheck, CheckIcon } from '@chakra-ui/icons'
+import { Box, Container, Heading, Text, Link, Button, Image, SimpleGrid, List, ListItem, ListIcon, Center, Divider } from '@chakra-ui/react'
+import { CheckIcon } from '@chakra-ui/icons'
 import { Link as ReactLink } from 'react-router-dom'
 const HomePage = () => {
   return (
-    <Container maxW='80%'>
+    <Container maxW='100%'>
       <Box maxW='70%' m='auto' mt={20} >
         <Heading as='h1'>Organize All Of Your Marketing In One Place. From Any Place.</Heading>
         <Text fontSize='md'>Get more done in less time with the only work management software for marketers.</Text>
@@ -15,7 +15,7 @@ const HomePage = () => {
       <Box>
         <Image src='https://coschedule.com/_next/image?url=%2Fimg%2Fhome%2Fhome-calendar.png&w=1200&q=75' alt='' />
       </Box>
-      <Box mt={10}>
+      <Box p={20} mt={10}>
         <Heading as='h2'>3000 marketers start their day with CoSchedule</Heading>
         <SimpleGrid columns={[1, 2, 3, 5]} mt={10} spacing='20px'>
           <Box p={2} height='80px'>
@@ -45,18 +45,18 @@ const HomePage = () => {
 
         </SimpleGrid>
       </Box>
-      <Box mt={20}>
+      <Box p={20} mt={10}>
         <Heading>
           Our Porducts
         </Heading>
-        <SimpleGrid mt={10} columns={{ base: 1, sm: 1, md: 2 }} gap={4} p={2}>
+        <SimpleGrid mt={10} columns={{ base: 1, md: 2 }} gap={4} p={2}>
           <Box borderRadius={5} boxShadow='dark-lg' minW={340} >
             <Box>
               <Image w='100%' h='120px' src='https://coschedule.com/_next/image?url=%2Fimg%2Fhome%2Fmc-product-background.png&w=1920&q=100' alt='' />
             </Box>
             <Box m='-30px 20px 20px'>
               <Image h='60px' boxShadow='dark-lg' w='60px' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-HqEoGA6PY3dWvni8a0Oll3Eef0dQkwvH5ufNOtHo3g&s' alt='' />
-              <Heading  mt={5} as='h3'>Marketing Calendar</Heading>
+              <Heading mt={5} as='h3'>Marketing Calendar</Heading>
               <Text fontSize='sm'>
                 A calendar that helps you see, schedule, and share your marketing.
               </Text>
@@ -85,9 +85,9 @@ const HomePage = () => {
             </Box>
             <Box m='-30px 20px 20px'>
               <Image h='60px' boxShadow='dark-lg' w='60px' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhkmWGsib0scgc9BFQ97Ivm2kueGxP39YI00TyF0Xgdg&s' alt='' />
-              <Heading  mt={5} as='h3'>Marketing Suite</Heading>
+              <Heading mt={5} as='h3'>Marketing Suite</Heading>
               <Text fontSize='sm'>
-              A family of agile marketing products to coordinate your team, projects, and process.
+                A family of agile marketing products to coordinate your team, projects, and process.
               </Text>
               <List mt={5} spacing={2}>
                 <ListItem>
@@ -114,9 +114,9 @@ const HomePage = () => {
             </Box>
             <Box m='-30px 20px 20px'>
               <Image h='60px' boxShadow='dark-lg' w='60px' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdFf4vYwRJ8HfLpbQzQ6k4sYBBDOfbPMWr-r7Qf6Aj3A&s' alt='' />
-              <Heading  mt={5} as='h3'>Headline Studio</Heading>
+              <Heading mt={5} as='h3'>Headline Studio</Heading>
               <Text fontSize='sm'>
-              Write better headlines that will boost your traffic.
+                Write better headlines that will boost your traffic.
               </Text>
               <List mt={5} spacing={2}>
                 <ListItem>
@@ -143,9 +143,9 @@ const HomePage = () => {
             </Box>
             <Box m='-30px 20px 20px'>
               <Image h='60px' boxShadow='dark-lg' w='60px' src='https://coschedule.com/img/academy/ami-logo-color.svg' alt='' />
-              <Heading  mt={5} as='h3'>Actionable Marketing Institute</Heading>
+              <Heading mt={5} as='h3'>Actionable Marketing Institute</Heading>
               <Text fontSize='sm'>
-              Develop new marketing skills in 30 minutes (or less).
+                Develop new marketing skills in 30 minutes (or less).
               </Text>
               <List mt={5} spacing={2}>
                 <ListItem>
@@ -166,8 +166,55 @@ const HomePage = () => {
               </Button>
             </Box>
           </Box>
-
         </SimpleGrid>
+      </Box>
+      <Box mt={20}>
+        <Heading as='h2'>
+          <Center>
+            The fastest growing marketing work management software
+          </Center>
+        </Heading>
+        <Text fontSize='sm'>CoSchedule is trusted by 30,000 marketers in 100+ countries.</Text>
+        <SimpleGrid  p={20} templateColumns={{ base: '1fr', md: '1fr 1fr 1fr' }} gap={4}>
+          <Box _hover={{ boxShadow: 'dark-lg' }} p={10}>
+            <Link as={ReactLink} to='/'>
+              <Heading as='h2'>Gartner</Heading>
+              <Heading fontSize='lg' as='h4'>Magic Quadrant</Heading>
+              <Center>
+              <Divider borderWidth='2px' w={20} m={4} />
+              </Center>
+              <Text fontSize='md'>
+              The Gartner Magic Quadrant™ for Content Marketing Platforms 2022
+              </Text>
+            </Link>
+          </Box>
+          <Box _hover={{ boxShadow: 'dark-lg' }} p={10}>
+            <Link as={ReactLink} to='/'>
+              <Center>
+             <Image h='85px' w='147px' src='https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Finc-5000-logo.png&w=384&q=75' alt=''/>
+              </Center>
+              <Text pt={10} fontSize='md'>
+              One Of The Fastest-Growing Marketing Platforms 3 Years In a Row
+              </Text>
+            </Link>
+          </Box>
+          <Box _hover={{ boxShadow: 'dark-lg' }} p={10}>
+            <Link as={ReactLink} to='/'>
+              <Center>
+             <Image h='110px' w='84px' src='https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fg2crowd-badge.png&w=256&q=75' alt=''/>
+              </Center>
+              <Text pt={10} fontSize='md'>
+              Awarded High Performer in 7 Product Categories
+              </Text>
+            </Link>
+          </Box>
+        </SimpleGrid>
+      </Box>
+      <Box bg='red.300' p='70px 20px'  color='white'>
+        <Heading as='h2'>Organize all of your marketing in one place</Heading>
+        <Button as={Button} colorScheme='white' color={'red.300'} variant='solid'>
+        <Link as={ReactLink} to='/product-demo'>Get Started Free</Link>
+        </Button>
       </Box>
     </Container>
   )
