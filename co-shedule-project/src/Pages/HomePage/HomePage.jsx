@@ -3,9 +3,11 @@ import { Box, Container, Heading, Text, Link, Button, Image, SimpleGrid, List, L
 import { CheckIcon } from '@chakra-ui/icons'
 import { Link as ReactLink } from 'react-router-dom'
 import Footer from './Footer'
+
 const HomePage = () => {
   return (
     <Container maxW='100%'>
+
       <Box maxW='70%' m='auto' mt={20} >
         <Heading as='h1' fontSize="5xl">Organize All Of Your Marketing In One Place. From Any Place.</Heading>
         <Text fontSize='lg'>Get more done in less time with the only work management software for marketers.</Text>
