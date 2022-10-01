@@ -9,7 +9,11 @@ import Resources from './Resources'
 
 const Navbar = () => {
   return (
-    <Flex p={2}>
+    <Flex p={2} 
+    position= 'sticky'
+    bg="white"
+    boxShadow='lg'
+    top='0'>
       <HStack spacing='24px'>
       <Logo/>
       <MenuButtons name='Product'/>
