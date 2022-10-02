@@ -21,6 +21,11 @@ const LoginPage = () => {
     })
     .then(res=>{
      alert(`Hi! your token is ${res.data.token}`)
+    }).catch(err=>{
+      alert(`Please sign up first
+                  or
+            check your user id and password
+      `)
     })
   }
   return (
