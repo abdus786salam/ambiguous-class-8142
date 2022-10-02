@@ -48,12 +48,12 @@ const HomePage = () => {
 
         </SimpleGrid>
       </Box>
-      <Box p={20} m={10}>
+      <Box p={20} m='auto'>
         <Heading>
           Our Porducts
         </Heading>
-        <SimpleGrid mt={10} columns={{ base: 1, md: 2 }} gap={4} p={2}>
-          <Box borderRadius={5} boxShadow='dark-lg' minW={340} >
+        <SimpleGrid mt={10} columns={{ base: 1, md: 2 }} gap={10} p={2}>
+          <Box borderRadius={5} boxShadow='dark-lg'  >
             <Box>
               <Image w='100%' h='120px' src='https://coschedule.com/_next/image?url=%2Fimg%2Fhome%2Fmc-product-background.png&w=1920&q=100' alt='' />
             </Box>
@@ -77,12 +77,12 @@ const HomePage = () => {
                   Show what your marketing is doing
                 </ListItem>
               </List>
-              <Button mt={5} as={Button} colorScheme='red' variant='solid'>
+              <Button mt={10} as={Button} colorScheme='red' variant='solid'>
                 <Link as={ReactLink} to='/'>Explore More</Link>
               </Button>
             </Box>
           </Box>
-          <Box borderRadius={5} boxShadow='dark-lg' minW={340} >
+          <Box borderRadius={5} boxShadow='dark-lg' >
             <Box>
               <Image w='100%' h='120px' src='https://coschedule.com/_next/image?url=%2Fimg%2Fhome%2Fsuite-product-background.png&w=1920&q=100' alt='' />
             </Box>
@@ -106,12 +106,12 @@ const HomePage = () => {
                   Maximize resources to increase output
                 </ListItem>
               </List>
-              <Button mt={5} as={Button} colorScheme='red' variant='solid'>
+              <Button mt={10} as={Button} colorScheme='red' variant='solid'>
                 <Link as={ReactLink} to='/'>Explore More</Link>
               </Button>
             </Box>
           </Box>
-          <Box borderRadius={5} boxShadow='dark-lg' minW={340} >
+          <Box borderRadius={5} boxShadow='dark-lg'  >
             <Box>
               <Image w='100%' h='120px' src='https://coschedule.com/_next/image?url=%2Fimg%2Fhome%2Fhs-product-background.png&w=1920&q=100' alt='' />
             </Box>
@@ -135,12 +135,12 @@ const HomePage = () => {
                   Find the high-scoring words instantly
                 </ListItem>
               </List>
-              <Button mt={5} as={Button} colorScheme='blue' variant='solid'>
+              <Button mt={10} as={Button} colorScheme='blue' variant='solid'>
                 <Link as={ReactLink} to='/'>Explore More</Link>
               </Button>
             </Box>
           </Box>
-          <Box borderRadius={5} boxShadow='dark-lg' minW={340} >
+          <Box borderRadius={5} boxShadow='dark-lg'  >
             <Box>
               <Image w='100%' h='120px' src='https://coschedule.com/_next/image?url=%2Fimg%2Fhome%2Fami-product-background.png&w=1920&q=100' alt='' />
             </Box>
@@ -164,7 +164,7 @@ const HomePage = () => {
                   Learn from industry pros you trust
                 </ListItem>
               </List>
-              <Button mt={5} as={Button} colorScheme='purple' variant='solid'>
+              <Button mt={10} as={Button} colorScheme='purple' variant='solid'>
                 <Link as={ReactLink} to='/'>Explore More</Link>
               </Button>
             </Box>

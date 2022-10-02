@@ -29,7 +29,7 @@ const Navbar = () => {
         <Link textDecoration='none' as={ReactLink} to='/login'>Sign In</Link>
         </Button>
         <Button as={Button} colorScheme='red'  variant='solid'>
-        <Link as={ReactLink} to='/product-demo'>Get A Demo</Link>
+        <Link as={ReactLink} to='/signup'>Get A Demo</Link>
         </Button>
         <ColorModeSwitcher justifySelf="flex-end" />
       </HStack>
