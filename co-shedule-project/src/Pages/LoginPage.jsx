@@ -1,8 +1,33 @@
-import React from 'react'
-import { Box, Button, Container, Flex, FormControl, FormLabel, Heading, Image, Input, Stack, Link } from '@chakra-ui/react'
+import { Box, Button, Container, Flex, FormControl, FormLabel, Heading, Image, Input, Stack, Link} from '@chakra-ui/react'
 import { Link as ReactLink } from 'react-router-dom'
+import React, { useState } from 'react'
+import axios from 'axios'
+
 
 const LoginPage = () => {
+
+  const [formData, setFormData] = useState({
+    email: '',
+    password: ''
+  })
+  const handleChangeFormData = (e) => {
+    const { name, value } = e.target
+    setFormData({ ...formData, [name]: value })
+  }
+  const handleSubmit = (e) =>{
+    e.preventDefault()
+    axios.post(`https://reqres.in/api/login`,{
+      ...formData
+    })
+    .then(res=>{
+     alert(`Hi! your token is ${res.data.token}`)
+    }).catch(err=>{
+      alert(`Please sign up first
+                  or
+            check your user id and password
+      `)
+    })
+  }
   return (
     <Container maxW='100vw' h='100vh' >
       <Flex h='100%'>
@@ -16,15 +41,15 @@ const LoginPage = () => {
           <Box p={10}>
             <Image src="https://accounts.coschedule.com/img/cos-logo-horz.svg" />
           </Box>
-          <form>
+          <form onSubmit={handleSubmit}>
             <Stack direction='column' spacing={4} align='center'>
               <FormControl >
                 <FormLabel fontSize='sm'>EMAIL ADDRESS</FormLabel>
-                <Input size='lg' type='email' placeholder='Email Address' />
+                <Input size='lg' type='email' name='email' value={formData.email} onChange={handleChangeFormData} placeholder='Email Address' />
               </FormControl>
               <FormControl >
                 <FormLabel fontSize='sm'>PASSWORD</FormLabel>
-                <Input size='lg' type='password' placeholder='Password' />
+                <Input size='lg' type='password' name='password' value={formData.password} onChange={handleChangeFormData} placeholder='Password' />
               </FormControl>
               <FormControl >
                 <Button
@@ -48,7 +73,7 @@ const LoginPage = () => {
                   fontSize='md'
                 >
                   <Flex>
-                    <Image mr='10px' h='20px' w='20px' src='https://accounts.coschedule.com/img/sso-providers/Google.svg'/>
+                    <Image mr='10px' h='20px' w='20px' src='https://accounts.coschedule.com/img/sso-providers/Google.svg' />
                     <span>Continue with google</span>
                   </Flex>
                 </Button>
@@ -62,7 +87,7 @@ const LoginPage = () => {
                   fontSize='md'
                 >
                   <Flex>
-                    <Image mr='10px' h='20px' w='20px' src='https://accounts.coschedule.com/img/sso-providers/Facebook.svg'/>
+                    <Image mr='10px' h='20px' w='20px' src='https://accounts.coschedule.com/img/sso-providers/Facebook.svg' />
                     <span>Continue with Facebook</span>
                   </Flex>
                 </Button>
@@ -76,7 +101,7 @@ const LoginPage = () => {
                   fontSize='md'
                 >
                   <Flex>
-                    <Image mr='10px' h='20px' w='20px' src='https://accounts.coschedule.com/img/sso-providers/apple.svg'/>
+                    <Image mr='10px' h='20px' w='20px' src='https://accounts.coschedule.com/img/sso-providers/apple.svg' />
                     <span>Continue with Apple</span>
                   </Flex>
                 </Button>
