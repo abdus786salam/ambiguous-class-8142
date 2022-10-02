@@ -1,20 +1,34 @@
 import React from 'react'
-import { Box, Flex, SimpleGrid, List, Heading, ListItem, Link, Image, Divider,VStack } from '@chakra-ui/react'
+import { 
+    Box, 
+    Flex, 
+    SimpleGrid, 
+    List, 
+    Heading, 
+    ListItem, 
+    Link, 
+    Image, 
+    Divider, 
+    VStack, 
+    Text, 
+    Spacer, 
+    Icon } from '@chakra-ui/react'
 import { Link as ReactLink } from "react-router-dom"
+import { FaFacebook, FaTwitter, FaLinkedin, FaPinterest, FaInstagramSquare } from "react-icons/fa";
 
 const Footer = () => {
     return (
         <Box>
             <SimpleGrid mt={10} columns={{ base: 1, md: 2 }} templateColumns={{ base: '1fr', md: '1fr 2fr' }} gap={4} p={2}>
                 <VStack order={{ base: 2, md: 1 }}>
-                    <Image src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS07cEZ5wJoqGfCPJ1t0MDVSTRBagFtQssIabCrGxA&s' alt=''/>
-                    <Link fontSize='sm' as={ReactLink} to='/login'>Sign Up</Link>
+                    <Image src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS07cEZ5wJoqGfCPJ1t0MDVSTRBagFtQssIabCrGxA&s' alt='' />
+                    <Link fontSize='sm' as={ReactLink} to='/signup'>Sign Up</Link>
                     <Link fontSize='sm' as={ReactLink} to='/product-demo'>Request A Demo</Link>
                     <Link fontSize='sm' as={ReactLink} to='/login'>Sign In</Link>
                     <SimpleGrid columns={3} gap={2}>
-                        <Image  h='50px' w='50px' src='https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fg2crowd-badge.png&w=96&q=75' alt=''/>
-                        <Image  h='50px' w='50px' src='https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fgartner-badge.png&w=128&q=75' alt=''/>
-                        <Image  h='50px' w='50px' src='https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fforbes-badge.png&w=96&q=75' alt=''/>
+                        <Image h='50px' w='50px' src='https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fg2crowd-badge.png&w=96&q=75' alt='' />
+                        <Image h='50px' w='50px' src='https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fgartner-badge.png&w=128&q=75' alt='' />
+                        <Image h='50px' w='50px' src='https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fforbes-badge.png&w=96&q=75' alt='' />
                     </SimpleGrid>
                 </VStack>
                 <SimpleGrid order={{ base: 1, md: 2 }} columns={{ base: 2, lg: 3 }} spacing={8} justifyContent='left'>
@@ -199,6 +213,32 @@ const Footer = () => {
                     </Box>
                 </SimpleGrid>
             </SimpleGrid>
+            <Flex direction={{ base: 'column', md: 'row' }} m='60px 60px 10px' justifyContent='center' alignItems='center' >
+                <Box>
+                    <Text fontSize='sm'>
+                        © Copyright 2022, all rights reserved. See our <Link>Terms & Policies</Link>
+                    </Text>
+                </Box>
+                <Spacer/>
+                <Flex gap={2} color='gray' >
+                    <Link>
+                       <Icon boxSize={8} as={FaFacebook} /> 
+                    </Link>
+                    <Link>
+                       <Icon boxSize={8} as={FaTwitter} /> 
+                    </Link>
+                    <Link>
+                       <Icon boxSize={8} as={FaLinkedin} /> 
+                    </Link>
+                    <Link>
+                       <Icon boxSize={8} as={FaPinterest} /> 
+                    </Link>
+                    <Link>
+                       <Icon boxSize={8} as={FaInstagramSquare} /> 
+                    </Link>
+                    
+                </Flex>
+            </Flex>
         </Box>
     )
 }
